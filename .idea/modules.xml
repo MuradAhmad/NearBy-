@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NearBy.iml" filepath="$PROJECT_DIR$/.idea/modules/NearBy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NearBy.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NearBy.app.iml" />
     </modules>
   </component>
 </project>
