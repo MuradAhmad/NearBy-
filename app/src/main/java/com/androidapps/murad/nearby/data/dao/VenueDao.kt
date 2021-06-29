@@ -5,15 +5,16 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.androidapps.murad.nearby.data.VenueDataEntity
 import com.androidapps.murad.nearby.models.VenueData
 
 @Dao
 interface VenueDao {
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertAll(vararg venueData: VenueData)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insert(venueDataEntity: VenueDataEntity): Long
 
-    @Query("SELECT placeName FROM venue_table ORDER BY id DESC")
-    fun readData(): LiveData<List<VenueData>>
+    @Query("SELECT * FROM venue_table")
+    suspend fun readData(): List<VenueDataEntity>
 
 }

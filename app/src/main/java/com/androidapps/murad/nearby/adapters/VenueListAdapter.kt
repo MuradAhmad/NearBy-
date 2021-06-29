@@ -1,3 +1,4 @@
+/*
 
 package com.androidapps.murad.nearby.adapters
 
@@ -8,9 +9,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.androidapps.murad.nearby.R
 import com.androidapps.murad.nearby.models.VenueData
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.card_layout.view.*
 
-
+@AndroidEntryPoint
 class VenueListAdapter: RecyclerView.Adapter<VenueListAdapter.VenueViewHolder>() {
 
     private var _venueList = emptyList<VenueData>()
@@ -41,3 +43,4 @@ class VenueListAdapter: RecyclerView.Adapter<VenueListAdapter.VenueViewHolder>()
 
 }
 
+*/

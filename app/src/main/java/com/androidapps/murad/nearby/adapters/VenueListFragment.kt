@@ -1,3 +1,4 @@
+/*
 package com.androidapps.murad.nearby.adapters
 
 import android.os.Bundle
@@ -10,11 +11,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.androidapps.murad.nearby.R
 import com.androidapps.murad.nearby.viewmodel.VenueViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.view.*
 
+@AndroidEntryPoint
 class VenueListFragment: Fragment() {
 
     private lateinit var _venueViewModel: VenueViewModel
+    //var venueViewModel: VenueViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,4 +40,4 @@ class VenueListFragment: Fragment() {
         return view
     }
 
-}
+}*/
